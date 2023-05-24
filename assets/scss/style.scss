@@ -1,0 +1,29 @@
+$background: #A1A1A5;
+$base: #F4F2F7;
+$dark: #291711;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $base;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside{
+    background-color: $base;
+    border: 1px solid $dark;
+    height: calc(100vh - 5rem);
+    width: calc(100vw - 5rem);
+}
+
+
+
+
