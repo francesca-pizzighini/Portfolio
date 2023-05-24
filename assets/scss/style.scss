@@ -10,20 +10,42 @@ $dark: #291711;
 
 body{
     background-color: $base;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
+    border: 40px solid $base;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .inside{
-    background-color: $base;
+    background-color: transparent;
+    width: calc(100vw - 80px);
+    height: calc(100vh - 80px);
     border: 1px solid $dark;
-    height: calc(100vh - 5rem);
-    width: calc(100vw - 5rem);
 }
 
-
+.figure-one{
+    height: 200px;
+    width: 200px;
+    border-radius: 40px;
+    position: relative;
+    top:-200px;
+    left:-200px;
+    z-index: -1;
+    background-color: #36558F ;
+    animation: 120s  5s infinite movimento-one;
+}
+@keyframes movimento-one {
+    0%, 100%{
+        transform: translate(-10vw,-10vh) rotate(120deg);
+    }
+    33%{
+        transform: translate(110vw, 50vh) rotate(-240deg);
+    }
+    66%{
+       transform: translate(50vw, 110vh) rotate(-360deg);
+    }
+}
 
 
