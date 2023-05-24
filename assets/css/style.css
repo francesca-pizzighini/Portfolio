@@ -12,6 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .inside {
@@ -30,7 +31,8 @@ body {
   left: -200px;
   z-index: -1;
   background-color: #36558F;
-  animation: 120s 5s infinite movimento-one;
+  opacity: 0.7;
+  animation: 12s 0s infinite movimento-one;
 }
 
 @keyframes movimento-one {
@@ -41,6 +43,6 @@ body {
     transform: translate(110vw, 50vh) rotate(-240deg);
   }
   66% {
-    transform: translate(50vw, 110vh) rotate(-360deg);
+    transform: translate(50vw, 120vh) rotate(-360deg);
   }
 }
