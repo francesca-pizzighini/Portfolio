@@ -10,9 +10,6 @@ body {
   width: 100vw;
   height: 100vh;
   border: 40px solid #F4F3F7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
 
@@ -46,6 +43,8 @@ p {
   width: calc(100vw - 80px);
   height: calc(100vh - 80px);
   border: 1px solid #291711;
+  overflow-y: scroll;
+  scrollbar-width: none;
 }
 .inside ul {
   margin-left: 23px;
@@ -81,15 +80,18 @@ p {
 }
 .inside p.bio {
   width: 200px;
-  margin-right: 20px;
-  position: absolute;
-  bottom: 60px;
-  right: 40px;
+  margin-left: 23px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.inside::-webkit-scrollbar {
+  display: none;
 }
 
 .figure-one {
-  height: 400px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
   border-radius: 40px;
   position: absolute;
   top: -160px;
@@ -140,8 +142,8 @@ p {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
           clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   position: absolute;
-  bottom: -80px;
-  left: -80px;
+  bottom: -100px;
+  left: -100px;
   z-index: -1;
   animation: 30s 0s linear infinite movimento-three;
 }
@@ -152,5 +154,17 @@ p {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (min-width: 800px) {
+  .figure-one {
+    height: 400px;
+    width: 400px;
+  }
+  p.bio {
+    margin: 0 20px 0 0;
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
   }
 }

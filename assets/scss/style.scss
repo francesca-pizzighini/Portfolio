@@ -13,11 +13,7 @@ body{
     background-color: $base;
     width: 100vw;
     height: 100vh;
-    // height: 2000px;
     border: 40px solid $base;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
 }
 
@@ -48,10 +44,9 @@ p{
     background-color: transparent;
     width: calc(100vw - 80px);
     height: calc(100vh - 80px);
-    // position: sticky;
-    // top: 40px;
-    // left: 40px;
     border: 1px solid $dark;
+    overflow-y: scroll;
+    scrollbar-width: none;
 
     ul{
         margin-left: 23px;
@@ -93,21 +88,21 @@ p{
     // home biography
     p.bio{
         width:200px;
-        margin-right:20px;
-        position: absolute;
-        bottom: 60px;
-        right:40px;
+        margin-left:23px;
+        margin-top: 50px;
+        margin-bottom: 20px;
     }
-    
 
-
+}
+.inside::-webkit-scrollbar{
+    display: none;
 }
 
 
 // moving shapes in the background
 .figure-one{
-    height: 400px;
-    width: 400px;
+    height: 200px;
+    width: 200px;
     border-radius: 40px;
     position: absolute;
     top:-160px;
@@ -115,7 +110,7 @@ p{
     z-index: -1;
     background-color: #7CA982 ;
     animation: 120s  0s linear infinite movimento-one;
-}
+    }
 @keyframes movimento-one {
     0%{
         transform: translate(-10vw,-10vh) rotate(0deg);
@@ -124,12 +119,13 @@ p{
         transform: translate(130vw, 50vh) rotate(120deg);
     }
     66%{
-       transform: translate(50vw, 120vh) rotate(240deg);
+    transform: translate(50vw, 120vh) rotate(240deg);
     }
     100%{
         transform: translate(-10vw,-10vh) rotate(360deg);
     }
 }
+
 
 .figure-two{
     height: 150px;
@@ -157,8 +153,8 @@ p{
     background-color: #0A8754;
     clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
     position: absolute;
-    bottom:-80px;
-    left:-80px;
+    bottom: -100px;
+    left:-100px;
     z-index: -1;
     animation: 30s  0s linear infinite movimento-three;
 }
@@ -174,3 +170,16 @@ p{
 
 
 // media queries
+@media only screen and (min-width: 800px){
+    .figure-one{
+        height: 400px;
+        width: 400px;
+    }
+
+    p.bio{
+        margin:0 20px 0 0;
+        position: absolute;
+        bottom:60px;
+        right: 40px;
+    }
+}
