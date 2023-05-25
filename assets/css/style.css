@@ -21,6 +21,7 @@ h1 {
   font-size: 60px;
   line-height: 1;
   margin-left: 20px;
+  margin-top: 5px;
   color: #291711;
 }
 
@@ -30,7 +31,7 @@ h2 {
   line-height: 1;
   margin-left: 23px;
   color: #291711;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .inside {
@@ -45,6 +46,7 @@ h2 {
 .inside ul li {
   list-style-type: none;
   margin-top: 5px;
+  font-weight: 600;
 }
 .inside ul li .line {
   background-color: #291711;
@@ -56,7 +58,14 @@ h2 {
   color: #291711;
 }
 .inside ul li a:hover {
-  font-weight: 800;
+  opacity: 0.5;
+  transition: 200ms;
+}
+.inside ul li a:active {
+  font-weight: 600;
+}
+.inside ul li a:focus {
+  font-weight: 600;
 }
 
 .container {

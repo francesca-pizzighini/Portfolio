@@ -26,6 +26,7 @@ h1{
     font-size: 60px;
     line-height: 1;
     margin-left:20px;
+    margin-top:5px;
     color: $dark;
 }
 h2{
@@ -34,7 +35,7 @@ h2{
     line-height: 1;
     margin-left:23px;
     color: $dark;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 .inside{
@@ -52,6 +53,7 @@ h2{
         li{
             list-style-type: none;
             margin-top: 5px;
+            font-weight: 600;
 
             .line{
                 background-color: $dark;
@@ -62,13 +64,18 @@ h2{
             a{
                 text-decoration: none;
                 color: $dark;
-
-                
+ 
             }
             a:hover{
-                font-weight: 800;
+                opacity: 0.5;
+                transition: 200ms;
             }
-            
+            a:active{
+                font-weight: 600;
+            }
+            a:focus{
+                font-weight: 600;
+            }
         }
     }
 }
@@ -78,11 +85,6 @@ h2{
     flex-direction: column;
     justify-content: start;
 }
-
-
-
-
-
 
 .figure-one{
     height: 400px;
