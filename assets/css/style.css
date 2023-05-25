@@ -98,7 +98,7 @@ p {
   left: -160px;
   z-index: -1;
   background-color: #7CA982;
-  animation: 120s 0s linear infinite movimento-one;
+  animation: 2s 0s linear infinite movimento-one;
 }
 
 @keyframes movimento-one {
@@ -109,7 +109,7 @@ p {
     transform: translate(130vw, 50vh) rotate(120deg);
   }
   66% {
-    transform: translate(50vw, 120vh) rotate(240deg);
+    transform: translate(50vw, 85vh) rotate(240deg);
   }
   100% {
     transform: translate(-10vw, -10vh) rotate(360deg);
@@ -142,7 +142,7 @@ p {
   -webkit-clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
           clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   left: -100px;
   z-index: -1;
   animation: 30s 0s linear infinite movimento-three;
