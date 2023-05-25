@@ -11,19 +11,27 @@ $dark: #291711;
 body{
     background-color: $base;
     width: 100vw;
-    height: 100vh;
+    // height: 100vh;
+    height: 2000px;
     border: 40px solid $base;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    // overflow: hidden;
+    position: relative;
+    z-index: 1;
+
 }
 
 .inside{
-    background-color: transparent;
+    background-color: $base;
     width: calc(100vw - 80px);
     height: calc(100vh - 80px);
+    position: sticky;
+    top: 40px;
+    left: 40px;
     border: 1px solid $dark;
+    z-index: 5;
 }
 
 .figure-one{

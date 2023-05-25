@@ -7,19 +7,21 @@
 body {
   background-color: #EAE6EF;
   width: 100vw;
-  height: 100vh;
+  height: 2000px;
   border: 40px solid #EAE6EF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .inside {
-  background-color: transparent;
+  background-color: #EAE6EF;
   width: calc(100vw - 80px);
   height: calc(100vh - 80px);
+  position: sticky;
+  top: 40px;
+  left: 40px;
   border: 1px solid #291711;
+  z-index: 5;
 }
 
 .figure-one {
