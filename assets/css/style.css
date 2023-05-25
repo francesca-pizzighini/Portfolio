@@ -98,7 +98,7 @@ p {
   left: -160px;
   z-index: -1;
   background-color: #7CA982;
-  animation: 2s 0s linear infinite movimento-one;
+  animation: 120s 0s linear infinite movimento-one;
 }
 
 @keyframes movimento-one {
@@ -156,7 +156,7 @@ p {
     transform: rotate(360deg);
   }
 }
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) and (orientation: landscape) {
   body {
     overflow: hidden;
   }
