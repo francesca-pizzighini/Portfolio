@@ -37,6 +37,12 @@ h2{
     color: $dark;
     margin-bottom: 45px;
 }
+p{
+   font-weight: 800;
+   font-size: 16px;
+   line-height: 1.2;
+   color: $dark;
+}
 
 .inside{
     background-color: transparent;
@@ -53,7 +59,6 @@ h2{
         li{
             list-style-type: none;
             margin-top: 5px;
-            font-weight: 600;
 
             .line{
                 background-color: $dark;
@@ -64,7 +69,7 @@ h2{
             a{
                 text-decoration: none;
                 color: $dark;
- 
+                font-weight: 600;
             }
             a:hover{
                 opacity: 0.5;
@@ -78,14 +83,28 @@ h2{
             }
         }
     }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    // home biography
+    p.bio{
+        width:200px;
+        margin-right:20px;
+        position: absolute;
+        bottom: 60px;
+        right:40px;
+    }
+    
+
+
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
 
+// moving shapes in the background
 .figure-one{
     height: 400px;
     width: 400px;
@@ -153,3 +172,5 @@ h2{
 }
 
 
+
+// media queries
