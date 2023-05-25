@@ -1,11 +1,12 @@
 $background: #A1A1A5;
-$base: #EAE6EF;
+$base: #F4F3F7;
 $dark: #291711;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
 }
 
 body{
@@ -20,6 +21,22 @@ body{
     overflow: hidden;
 }
 
+h1{
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 1;
+    margin-left:20px;
+    color: $dark;
+}
+h2{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1;
+    margin-left:20px;
+    color: $dark;
+    margin-bottom: 50px;
+}
+
 .inside{
     background-color: transparent;
     width: calc(100vw - 80px);
@@ -28,17 +45,43 @@ body{
     // top: 40px;
     // left: 40px;
     border: 1px solid $dark;
+
+    ul{
+        margin-left: 20px;
+
+        .line{
+            background-color: $dark;
+            height: 1px;
+            width: 60px;
+        }
+
+        li{
+            list-style-type: none;
+            margin-top: 5px;
+        }
+    }
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+
+
+
 
 .figure-one{
     height: 200px;
     width: 200px;
     border-radius: 40px;
-    position: relative;
-    top:-200px;
-    left:-200px;
+    position: absolute;
+    top:-160px;
+    left:-160px;
     z-index: -1;
-    background-color: #36558F ;
+    background-color: #7CA982 ;
     animation: 120s  0s infinite movimento-one;
 }
 @keyframes movimento-one {
@@ -46,7 +89,7 @@ body{
         transform: translate(-10vw,-10vh) rotate(120deg);
     }
     33%{
-        transform: translate(120vw, 50vh) rotate(-240deg);
+        transform: translate(130vw, 50vh) rotate(-240deg);
     }
     66%{
        transform: translate(50vw, 120vh) rotate(-360deg);
