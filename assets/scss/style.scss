@@ -11,8 +11,8 @@ $dark: #291711;
 
 body{
     background-color: $base;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     border: 40px solid $base;
     overflow-x: hidden;
 }
@@ -42,8 +42,8 @@ p{
 
 .inside{
     background-color: transparent;
-    width: calc(100vw - 80px);
-    height: calc(100vh - 80px);
+    width: calc(100dvw - 80px);
+    height: calc(100dvh - 80px);
     border: 1px solid $dark;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -113,16 +113,16 @@ p{
     }
 @keyframes movimento-one {
     0%{
-        transform: translate(-10vw,-10vh) rotate(0deg);
+        transform: translate(-10dvw,-10dvh) rotate(0deg);
     }
     33%{
-        transform: translate(130vw, 50vh) rotate(120deg);
+        transform: translate(130dvw, 50dvh) rotate(120deg);
     }
     66%{
-    transform: translate(50vw, 85vh) rotate(240deg);
+    transform: translate(50dvw, 85dvh) rotate(240deg);
     }
     100%{
-        transform: translate(-10vw,-10vh) rotate(360deg);
+        transform: translate(-10dvw,-10dvh) rotate(360deg);
     }
 }
 
