@@ -53,41 +53,48 @@ p{
     overflow-y: scroll;
     scrollbar-width: none;
 
-    ul{
-        margin-left: 23px;
-
-        li{
-            list-style-type: none;
-            margin-top: 5px;
-
-            .line{
-                background-color: $dark;
-                height: 1px;
-                width: 55px;
-            }
-
-            a{
-                text-decoration: none;
-                color: $dark;
-                font-weight: 600;
-            }
-            a:hover{
-                opacity: 0.5;
-                transition: 200ms;
-            }
-            a:active{
-                font-weight: 600;
-            }
-            a:focus{
-                font-weight: 600;
-            }
-        }
-    }
+    
 
     .container{
+        height: calc(100dvh - 80px);
         display: flex;
         flex-direction: column;
         justify-content: start;
+
+        // menu
+        
+        ul:first-of-type{
+            margin-left: 23px;
+
+            li{
+                list-style-type: none;
+                margin-top: 5px;
+
+                .line{
+                    background-color: $dark;
+                    height: 1px;
+                    width: 55px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $dark;
+                    font-weight: 600;
+                }
+                a:hover{
+                    opacity: 0.5;
+                    transition: 200ms;
+                }
+                a:active{
+                    font-weight: 600;
+                }
+                a:focus{
+                    font-weight: 600;
+                }
+            }
+        }
+        
+        
 
         // home biography
         p.bio{
@@ -120,8 +127,29 @@ p{
                 
             }
         }
+        //contacts
+        ul.contacts{
+        margin-top: 100px;
+
+        li{
+            font-weight: 800;
+            margin-left: 23px;
+            list-style-type: none;
+            margin-top: 20px;
+
+            a{
+                text-decoration: none;
+                color: $dark;
+            }
+            a:hover{
+                opacity: 0.5;
+                transition: 200ms;
+            }
+        }
     }
 
+    }
+    
     
 
 }
@@ -246,6 +274,13 @@ p{
                 width: 200px;
             }
         }
+    }
+
+    // contacts
+    .contacts{
+        margin-left: auto;
+        margin-right: 20px;
+        margin-bottom: auto;
     }
 
     // moving shapes

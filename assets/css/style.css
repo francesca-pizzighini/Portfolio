@@ -52,37 +52,38 @@ p {
   overflow-y: scroll;
   scrollbar-width: none;
 }
-.inside ul {
+.inside .container {
+  height: calc(100dvh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.inside .container ul:first-of-type {
   margin-left: 23px;
 }
-.inside ul li {
+.inside .container ul:first-of-type li {
   list-style-type: none;
   margin-top: 5px;
 }
-.inside ul li .line {
+.inside .container ul:first-of-type li .line {
   background-color: #291711;
   height: 1px;
   width: 55px;
 }
-.inside ul li a {
+.inside .container ul:first-of-type li a {
   text-decoration: none;
   color: #291711;
   font-weight: 600;
 }
-.inside ul li a:hover {
+.inside .container ul:first-of-type li a:hover {
   opacity: 0.5;
   transition: 200ms;
 }
-.inside ul li a:active {
+.inside .container ul:first-of-type li a:active {
   font-weight: 600;
 }
-.inside ul li a:focus {
+.inside .container ul:first-of-type li a:focus {
   font-weight: 600;
-}
-.inside .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
 }
 .inside .container p.bio {
   width: 200px;
@@ -108,6 +109,23 @@ p {
 .inside .container .project p {
   font-weight: 600;
   line-height: 1;
+}
+.inside .container ul.contacts {
+  margin-top: 100px;
+}
+.inside .container ul.contacts li {
+  font-weight: 800;
+  margin-left: 23px;
+  list-style-type: none;
+  margin-top: 20px;
+}
+.inside .container ul.contacts li a {
+  text-decoration: none;
+  color: #291711;
+}
+.inside .container ul.contacts li a:hover {
+  opacity: 0.5;
+  transition: 200ms;
 }
 
 .inside::-webkit-scrollbar {
@@ -216,6 +234,11 @@ p {
     margin-bottom: 5px;
     margin-right: 20px;
     width: 200px;
+  }
+  .contacts {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-bottom: auto;
   }
   .figure-one {
     height: 400px;
