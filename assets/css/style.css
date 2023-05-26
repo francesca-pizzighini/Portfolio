@@ -207,6 +207,10 @@ p {
     margin: 0 20px 0 0;
     align-self: end;
   }
+  .contacts {
+    margin-left: auto;
+    margin-right: 20px;
+  }
 }
 @media only screen and (min-width: 900px) and (orientation: landscape) {
   body {
@@ -238,7 +242,6 @@ p {
   .contacts {
     margin-left: auto;
     margin-right: 20px;
-    margin-bottom: auto;
   }
   .figure-one {
     height: 400px;
