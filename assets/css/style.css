@@ -114,6 +114,23 @@ p {
   margin-left: 23px;
   margin-top: 20px;
 }
+.inside .container .languages, .inside .container .skills {
+  margin-left: 23px;
+  margin-top: 50px;
+}
+.inside .container .languages h3, .inside .container .skills h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.inside .container .languages ul, .inside .container .skills ul {
+  margin-left: 30px;
+}
+.inside .container .languages ul li, .inside .container .skills ul li {
+  margin-top: 5px;
+}
+.inside .container .skills {
+  margin-top: 30px;
+}
 
 .inside::-webkit-scrollbar {
   display: none;
@@ -196,14 +213,18 @@ p {
   }
   .contacts {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 40px;
   }
   .figure-one {
     height: 400px;
     width: 400px;
   }
+  .lang-and-skill {
+    margin-right: 40px;
+    align-self: end;
+  }
 }
-@media only screen and (min-width: 900px) and (orientation: landscape) {
+@media only screen and (min-width: 900px) {
   body {
     overflow: hidden;
   }
@@ -232,7 +253,11 @@ p {
   }
   .contacts {
     margin-left: auto;
-    margin-right: 20px;
+    margin-right: 40px;
+  }
+  .lang-and-skill {
+    margin-right: 40px;
+    align-self: end;
   }
   .figure-one {
     height: 400px;

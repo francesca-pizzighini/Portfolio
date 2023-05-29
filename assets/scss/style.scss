@@ -141,7 +141,26 @@ p{
         }
 
         // skills
-        
+        .languages, .skills{
+            margin-left: 23px;
+            margin-top: 50px;
+
+            h3{
+                font-size: 30px;
+            font-weight: 500;
+            }
+
+            ul{
+                margin-left: 30px;
+                li{
+                    margin-top: 5px;
+                }
+            }
+            
+        }
+        .skills{
+            margin-top: 30px;
+        }
 
     }
 
@@ -236,16 +255,24 @@ p{
     // contacts
     .contacts{
         margin-left: auto;
-        margin-right: 20px;
+        margin-right: 40px;
     }
      // moving shapes
     .figure-one{
         height: 400px;
         width: 400px;
     }
+
+    // skills
+    .lang-and-skill{
+        margin-right: 40px;
+        align-self: end;
+    }
 }
 
-@media only screen and (min-width: 900px) and (orientation: landscape){
+@media only screen and (min-width: 900px) 
+// and (orientation: landscape)
+{
     body{
         overflow: hidden;
     }
@@ -283,8 +310,16 @@ p{
     // contacts
     .contacts{
         margin-left: auto;
-        margin-right: 20px;
+        margin-right: 40px;
     }
+
+    // skills
+    .lang-and-skill{
+        margin-right: 40px;
+        align-self: end;
+    }
+
+
 
     // moving shapes
     .figure-one{
@@ -297,5 +332,4 @@ p{
         left:-100px;
         animation: 40s  0s linear infinite movimento-three;
     }
-
 }
