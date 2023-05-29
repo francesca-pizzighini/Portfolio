@@ -58,31 +58,35 @@ p {
   flex-direction: column;
   justify-content: start;
 }
-.inside .container ul:first-of-type {
+.inside .container ul li {
+  list-style-type: none;
+}
+.inside .container a {
+  text-decoration: none;
+  color: #291711;
+}
+.inside .container a:hover {
+  opacity: 0.5;
+  transition: 200ms;
+}
+.inside .container nav ul {
   margin-left: 23px;
 }
-.inside .container ul:first-of-type li {
-  list-style-type: none;
+.inside .container nav ul li {
   margin-top: 5px;
 }
-.inside .container ul:first-of-type li .line {
+.inside .container nav ul li .line {
   background-color: #291711;
   height: 1px;
   width: 55px;
 }
-.inside .container ul:first-of-type li a {
-  text-decoration: none;
-  color: #291711;
+.inside .container nav ul li a {
   font-weight: 600;
 }
-.inside .container ul:first-of-type li a:hover {
-  opacity: 0.5;
-  transition: 200ms;
-}
-.inside .container ul:first-of-type li a:active {
+.inside .container nav ul li a:active {
   font-weight: 600;
 }
-.inside .container ul:first-of-type li a:focus {
+.inside .container nav ul li a:focus {
   font-weight: 600;
 }
 .inside .container p.bio {
@@ -98,14 +102,6 @@ p {
   margin-left: 23px;
   margin-top: 20px;
 }
-.inside .container .project a {
-  text-decoration: none;
-  color: #291711;
-}
-.inside .container .project a:hover {
-  opacity: 0.5;
-  transition: 200ms;
-}
 .inside .container .project p {
   font-weight: 600;
   line-height: 1;
@@ -116,16 +112,7 @@ p {
 .inside .container ul.contacts li {
   font-weight: 800;
   margin-left: 23px;
-  list-style-type: none;
   margin-top: 20px;
-}
-.inside .container ul.contacts li a {
-  text-decoration: none;
-  color: #291711;
-}
-.inside .container ul.contacts li a:hover {
-  opacity: 0.5;
-  transition: 200ms;
 }
 
 .inside::-webkit-scrollbar {
@@ -211,6 +198,10 @@ p {
     margin-left: auto;
     margin-right: 20px;
   }
+  .figure-one {
+    height: 400px;
+    width: 400px;
+  }
 }
 @media only screen and (min-width: 900px) and (orientation: landscape) {
   body {
@@ -251,5 +242,6 @@ p {
     position: absolute;
     bottom: -100px;
     left: -100px;
+    animation: 40s 0s linear infinite movimento-three;
   }
 }
