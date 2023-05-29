@@ -249,13 +249,18 @@ p{
     // home biography
     p.bio{
         margin:0 20px 0 0;
+        
+    }
+    .biography{
         align-self: end;
     }
 
     // contacts
     .contacts{
-        margin-left: auto;
         margin-right: 40px;
+    }
+    .contact-section{
+        margin-left: auto;
     }
      // moving shapes
     .figure-one{
@@ -280,6 +285,9 @@ p{
     // home biography
     p.bio{
         margin:0 20px 0 0;
+        
+    }
+    .biography{
         align-self: end;
     }
 
@@ -309,8 +317,10 @@ p{
 
     // contacts
     .contacts{
-        margin-left: auto;
         margin-right: 40px;
+    }
+    .contact-section{
+        margin-left: auto;
     }
 
     // skills

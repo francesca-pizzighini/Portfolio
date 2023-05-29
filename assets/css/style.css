@@ -209,11 +209,15 @@ p {
   }
   p.bio {
     margin: 0 20px 0 0;
+  }
+  .biography {
     align-self: end;
   }
   .contacts {
-    margin-left: auto;
     margin-right: 40px;
+  }
+  .contact-section {
+    margin-left: auto;
   }
   .figure-one {
     height: 400px;
@@ -230,6 +234,8 @@ p {
   }
   p.bio {
     margin: 0 20px 0 0;
+  }
+  .biography {
     align-self: end;
   }
   .all-projects {
@@ -252,8 +258,10 @@ p {
     width: 200px;
   }
   .contacts {
-    margin-left: auto;
     margin-right: 40px;
+  }
+  .contact-section {
+    margin-left: auto;
   }
   .lang-and-skill {
     margin-right: 40px;
