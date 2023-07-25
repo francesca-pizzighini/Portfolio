@@ -165,7 +165,7 @@ p {
 .figure-two {
   height: 150px;
   width: 150px;
-  border-bottom-left-radius: 65%;
+  border-bottom-left-radius: 100%;
   position: absolute;
   top: 0px;
   right: 0px;
@@ -176,10 +176,14 @@ p {
 
 @keyframes movimento-two {
   0%, 100% {
-    transform: scale(1);
+    height: 150px;
+    width: 150px;
+    border-bottom-left-radius: 100%;
   }
   50% {
-    transform: scale(4);
+    height: 400px;
+    width: 400px;
+    border-bottom-left-radius: 100%;
   }
 }
 .figure-three {
@@ -226,6 +230,18 @@ p {
   .lang-and-skill {
     margin-right: 40px;
     align-self: end;
+  }
+  @keyframes movimento-two {
+    0%, 100% {
+      height: 150px;
+      width: 150px;
+      border-bottom-left-radius: 80%;
+    }
+    50% {
+      height: 400px;
+      width: 400px;
+      border-bottom-left-radius: 80%;
+    }
   }
 }
 @media only screen and (min-width: 900px) {
@@ -276,5 +292,17 @@ p {
     bottom: -100px;
     left: -100px;
     animation: 40s 0s linear infinite movimento-three;
+  }
+  @keyframes movimento-two {
+    0%, 100% {
+      height: 150px;
+      width: 150px;
+      border-bottom-left-radius: 80%;
+    }
+    50% {
+      height: 400px;
+      width: 400px;
+      border-bottom-left-radius: 80%;
+    }
   }
 }

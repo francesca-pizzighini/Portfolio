@@ -200,7 +200,10 @@ p{
 .figure-two{
     height: 150px;
     width: 150px;
-    border-bottom-left-radius: 65%;
+    border-bottom-left-radius: 100%;
+    // border-top-left-radius: 50%;
+    // border-bottom-right-radius: 50%;
+    // border-bottom-right-radius: 50%;
     // border-radius: 50%;
     position: absolute;
     top:0px;
@@ -211,10 +214,14 @@ p{
 }
 @keyframes movimento-two {
     0%, 100%{
-        transform: scale(1);
+        height: 150px;
+        width: 150px;
+        border-bottom-left-radius: 100%;
     }
     50%{
-        transform: scale(4);
+        height: 400px;
+        width: 400px;
+        border-bottom-left-radius: 100%;
     }
 }
 
@@ -272,6 +279,20 @@ p{
     .lang-and-skill{
         margin-right: 40px;
         align-self: end;
+    }
+
+    //animation-two
+    @keyframes movimento-two {
+        0%, 100%{
+            height: 150px;
+            width: 150px;
+            border-bottom-left-radius: 80%;
+        }
+        50%{
+            height: 400px;
+            width: 400px;
+            border-bottom-left-radius: 80%;
+        }
     }
 }
 
@@ -339,5 +360,18 @@ p{
         bottom: -100px;
         left:-100px;
         animation: 40s  0s linear infinite movimento-three;
+    }
+    //animation-two
+    @keyframes movimento-two {
+        0%, 100%{
+            height: 150px;
+            width: 150px;
+            border-bottom-left-radius: 80%;
+        }
+        50%{
+            height: 400px;
+            width: 400px;
+            border-bottom-left-radius: 80%;
+        }
     }
 }
