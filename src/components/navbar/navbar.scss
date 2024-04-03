@@ -1,0 +1,71 @@
+@import "../../variables.scss";
+
+.inside{
+    .container{
+        nav{
+            ul {
+                margin-left: 23px;
+
+                li {
+                    list-style-type: none;
+                    margin-top: 5px;
+
+                    .line {
+                        background-color: $dark;
+                        height: 1px;
+                        margin: 9px 0;
+                        width: 55px;
+                        display: none;
+                        cursor: default;
+                    }
+                    a {
+                        text-decoration: none;
+                        p{
+                            color: $dark;
+                            font-weight: 600;
+                            height: 19px;
+                        }
+
+                    }
+                    a:hover {
+                        opacity: 0.5;
+                        transition: 200ms;
+                    }
+                    a.active{
+                        p{
+                            display: none;
+                        }
+                        .line{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+//         // menu
+//         nav {
+//             ul {
+                
+    
+//                 li {
+                   
+    
+                    
+    
+//                     a {
+//                         font-weight: 600;
+//                     }
+    
+//                     a:active {
+//                         font-weight: 600;
+//                     }
+    
+//                     a:focus {
+//                         font-weight: 600;
+//                     }
+//                 }
+//             }
+    
+//         }
+    }
+}

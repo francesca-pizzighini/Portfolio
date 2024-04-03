@@ -1,0 +1,193 @@
+@import "./variables.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+body {
+    background-color: $base;
+    width: 100dvw;
+    height: 100dvh;
+    border: 40px solid $base;
+    overflow-x: hidden;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1;
+}
+
+p {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.2;
+    color: $dark;
+}
+
+.inside {
+    .container {
+
+
+
+        // home biography
+        p.bio {
+            width: 200px;
+            margin-left: 23px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        // projects
+        .all-projects {
+            margin-top: 50px;
+        }
+
+        .project {
+            margin-left: 23px;
+            margin-top: 20px;
+
+            p {
+                font-weight: 600;
+                line-height: 1;
+
+            }
+        }
+
+        //contacts
+        ul.contacts {
+            margin-top: 100px;
+
+            li {
+                font-weight: 800;
+                margin-left: 23px;
+                margin-top: 20px;
+            }
+        }
+
+        // skills
+        .languages,
+        .skills {
+            margin-left: 23px;
+            margin-top: 50px;
+
+            h3 {
+                font-size: 30px;
+                font-weight: 500;
+            }
+
+            ul {
+                margin-left: 30px;
+
+                li {
+                    margin-top: 5px;
+                }
+            }
+
+        }
+
+        .skills {
+            margin-top: 30px;
+        }
+
+    }
+
+}
+
+.inside::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+// media queries
+@media only screen and (min-width: 500px) and (max-width: 899px) {
+    body {
+        overflow: hidden;
+    }
+
+    // home biography
+    p.bio {
+        margin: 0 20px 0 0;
+
+    }
+
+    .biography {
+        align-self: end;
+    }
+
+    // contacts
+    .contacts {
+        margin-right: 40px;
+    }
+
+    .contact-section {
+        margin-left: auto;
+    }
+
+    // skills
+    .lang-and-skill {
+        margin-right: 40px;
+        align-self: end;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        overflow: hidden;
+    }
+
+    // home biography
+    p.bio {
+        margin: 0 20px 0 0;
+
+    }
+
+    .biography {
+        align-self: end;
+    }
+
+    // projects
+    .all-projects {
+        align-self: end;
+        margin-right: 20px;
+        max-width: 600px;
+        justify-self: end;
+
+        .project {
+            display: flex;
+            align-items: end;
+
+            h3 {
+                width: 650px;
+            }
+
+            p {
+                order: -1;
+                margin-bottom: 5px;
+                margin-right: 20px;
+                width: 200px;
+            }
+        }
+    }
+
+    // contacts
+    .contacts {
+        margin-right: 40px;
+    }
+
+    .contact-section {
+        margin-left: auto;
+    }
+
+    // skills
+    .lang-and-skill {
+        margin-right: 40px;
+        align-self: end;
+    }
+}

@@ -1,0 +1,163 @@
+@import "../../variables.scss";
+
+.inside {
+    background-color: transparent;
+    width: calc(100dvw - 80px);
+    height: calc(100dvh - 80px);
+    border: 1px solid $dark;
+    overflow: hidden;
+
+    .container {
+        height: calc(100dvh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        
+
+        .outlet{
+            height: 2000px;
+            background-color: rebeccapurple;
+            margin-top: 45px;
+            width: 400px;
+            overflow-y: scroll;
+            scrollbar-width: none;
+        }
+    }
+}
+
+
+// moving shapes in the background
+.figure-one {
+    height: 200px;
+    width: 200px;
+    border-radius: 40px;
+    position: absolute;
+    top: -160px;
+    left: -160px;
+    z-index: -1;
+    background-color: #7CA982;
+    animation: 120s 0s linear infinite movement-one;
+}
+
+@keyframes movement-one {
+    0% {
+        transform: translate(-10dvw, -10dvh) rotate(0deg);
+    }
+
+    33% {
+        transform: translate(130dvw, 50dvh) rotate(120deg);
+    }
+
+    66% {
+        transform: translate(50dvw, 85dvh) rotate(240deg);
+    }
+
+    100% {
+        transform: translate(-10dvw, -10dvh) rotate(360deg);
+    }
+}
+
+
+.figure-two {
+    height: 150px;
+    width: 150px;
+    border-bottom-left-radius: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    background-color: #07BEB8;
+    animation: 40s 0s infinite movement-two;
+}
+
+@keyframes movement-two {
+
+    0%,
+    100% {
+        height: 150px;
+        width: 150px;
+        border-bottom-left-radius: 100%;
+    }
+
+    50% {
+        height: 400px;
+        width: 400px;
+        border-bottom-left-radius: 100%;
+    }
+}
+
+.figure-three {
+    height: 300px;
+    width: 300px;
+    background-color: #0A8754;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    position: absolute;
+    bottom: 15px;
+    left: -100px;
+    z-index: -1;
+    animation: 120s 0s linear infinite movement-three;
+}
+
+@keyframes movement-three {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+// media queries
+@media only screen and (min-width: 500px) and (max-width: 899px){
+    .figure-one {
+        height: 400px;
+        width: 400px;
+    }
+
+    @keyframes movement-two {
+
+        0%,
+        100% {
+            height: 150px;
+            width: 150px;
+            border-bottom-left-radius: 80%;
+        }
+
+        50% {
+            height: 400px;
+            width: 400px;
+            border-bottom-left-radius: 80%;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .figure-one {
+        height: 400px;
+        width: 400px;
+    }
+
+    .figure-three {
+        position: absolute;
+        bottom: -100px;
+        left: -100px;
+        animation: 40s 0s linear infinite movement-three;
+    }
+
+    @keyframes movement-two {
+        0%,
+        100% {
+            height: 150px;
+            width: 150px;
+            border-bottom-left-radius: 80%;
+        }
+
+        50% {
+            height: 400px;
+            width: 400px;
+            border-bottom-left-radius: 80%;
+        }
+    }
+}
