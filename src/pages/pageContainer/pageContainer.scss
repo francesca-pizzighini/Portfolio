@@ -18,7 +18,7 @@
             height: 2000px;
             background-color: rebeccapurple;
             margin-top: 45px;
-            width: 400px;
+            width: 300px;
             overflow-y: scroll;
             scrollbar-width: none;
         }
@@ -111,6 +111,15 @@
 
 // media queries
 @media only screen and (min-width: 500px) and (max-width: 899px){
+    .inside{
+        .container{
+            .outlet{
+                align-self: flex-end;
+                width: 400px;
+            }
+        }
+    }
+
     .figure-one {
         height: 400px;
         width: 400px;
@@ -134,6 +143,15 @@
 }
 
 @media only screen and (min-width: 900px){
+    .inside {
+        .container {
+            .outlet {
+                align-self: flex-end;
+                width: 800px;
+            }
+        }
+    }
+
     .figure-one {
         height: 400px;
         width: 400px;

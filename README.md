@@ -5,7 +5,7 @@
 Welcome to my portfolio as a Front-end developer.
 <br>
 This website is meant as a presentation for myself and as a way to show my skills and my projects as a web developer.
-Please feel free to contact me if you're interested in working togheter, there's a form in the website where you can do it easily, and a link in the contacts part of this readme.
+Please feel free to contact me if you're interested in working togheter, there's a form in the contacts page in my portfolio where you can do it easily, and a section in the lower part of this readme.
 <br>
 <br>
 Try the website <a href= "https://francesca-pizzighini.github.io/Portfolio/">here</a>.
@@ -19,10 +19,6 @@ Or continue reading about the project <a href= "#the-project">here</a>.
     <ol>
         <li>
             <a href="#the-project">The Project</a>
-            <ul>
-                <li><a href="#prerequisite">Prerequisite</a></li>
-                <li><a href="#technical-requisite">Technical requisite</a></li>
-            </ul>
         </li>
         <!-- -->
         <li>
@@ -33,6 +29,7 @@ Or continue reading about the project <a href= "#the-project">here</a>.
             <a href="#coding">Coding</a>
             <ul>
                 <li><a href="#languages">Languages</a></li>
+                <li><a href="#libraries">Libraries</a></li>
             </ul>
         </li>
         <!--  -->
@@ -51,23 +48,9 @@ Or continue reading about the project <a href= "#the-project">here</a>.
 
 ## The project
 
-This project is part of my journey in learning to code with [Start2Impact University](https://www.start2impact.it). This is my first project, and will show all the following.
-It will be updated with all the things I'll learn.
+I made this project as the first part of my journey in learning to code with [Start2Impact University](https://www.start2impact.it), but I wanted to make it 100% mine so i continued working on it as long as i learned new features, and I'll continue this way to have an updated portfolio whith all the things I'll learn in the future.
 <br>
 Created in 2023.
-
-### Prerequisite
-
-My assignment was to build a Portfolio that could show my skills as a developer, and all my past projects.
-The projects are in chronological order (the first one is the most recent) to show my improvement.
-
-### Technical requisite
-
-- Using HTML & CSS for building the website
-- Good UX and UI
-- Show in a clear way my projects and skills
-
-Every addictional feature is welcome, especially:
 
 <p align="right"><a href="#top">return to the top</a></p>
 
@@ -91,10 +74,16 @@ To developed this website I used:
 - [Vite](https://vitejs.dev/guide/)
 - [React](https://react.dev)
 
+### Libraries
+
+- [React routing](https://reactrouter.com/en/main)
+- [Helmet async](https://www.npmjs.com/package/react-helmet-async)
+
 <p align="right"><a href="#top">return to the top</a></p>
 
 ## Download it yourself
 
+I strongly advise you not to copy my project, but i had a great benefit studying other people's code, so i want share my if it could be an inspiration for anyone.
 The first thing you need is Node.js installed, if you haven't please check [this](https://nodejs.org/it/download/) page.
 After the installation open the terminal in your computer and make sure you are in the folder you want to download the project in.
 
