@@ -1,0 +1,61 @@
+.inside{
+    .container {
+        .outlet{
+            section{ 
+                width: 200px;
+                margin-left: 23px;
+                margin-bottom: 20px;
+
+                p.bio {
+                    width: 200px;
+                    margin-bottom: 20px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 899px){
+    .inside{
+        .container{
+            padding-right: 20px;
+
+            .outlet{
+                width: 300px;
+
+                section{
+                    width: 300px;
+                    margin: 0;
+
+                    p.bio{
+                        width: 300px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .inside {
+        .container {
+            padding-right: 20px;
+
+            .outlet {
+                width: 300px;
+                
+                section {
+                    margin: 0;
+                    width: 300px;
+
+                    p.bio{
+                        width: 300px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

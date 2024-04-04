@@ -12,7 +12,7 @@ body {
     width: 100dvw;
     height: 100dvh;
     border: 40px solid $base;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 h3 {
@@ -34,12 +34,12 @@ p {
 
 
         // home biography
-        p.bio {
-            width: 200px;
-            margin-left: 23px;
-            margin-top: 50px;
-            margin-bottom: 20px;
-        }
+        // p.bio {
+        //     width: 200px;
+        //     margin-left: 23px;
+        //     margin-top: 50px;
+        //     margin-bottom: 20px;
+        // }
 
         // projects
         .all-projects {
@@ -97,9 +97,7 @@ p {
 
 }
 
-.inside::-webkit-scrollbar {
-    display: none;
-}
+
 
 
 
@@ -107,19 +105,19 @@ p {
 
 // media queries
 @media only screen and (min-width: 500px) and (max-width: 899px) {
-    body {
-        overflow: hidden;
-    }
+    // body {
+    //     overflow: hidden;
+    // }
 
     // home biography
-    p.bio {
-        margin: 0 20px 0 0;
+    // p.bio {
+    //     margin: 0 20px 0 0;
 
-    }
+    // }
 
-    .biography {
-        align-self: end;
-    }
+    // .biography {
+    //     align-self: end;
+    // }
 
     // contacts
     .contacts {
@@ -138,19 +136,19 @@ p {
 }
 
 @media only screen and (min-width: 900px) {
-    body {
-        overflow: hidden;
-    }
+    // body {
+    //     overflow: hidden;
+    // }
 
     // home biography
-    p.bio {
-        margin: 0 20px 0 0;
+    // p.bio {
+    //     margin: 0 20px 0 0;
 
-    }
+    // }
 
-    .biography {
-        align-self: end;
-    }
+    // .biography {
+    //     align-self: end;
+    // }
 
     // projects
     .all-projects {
