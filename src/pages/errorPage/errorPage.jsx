@@ -2,6 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import Header from "../../components/header/header";
 import Navbar from "../../components/navbar/navbar";
 import "./errorPage.scss";
+import ErrorComponent from "../../components/errorComponent/errorComponent";
 
 function ErrorPage() {
   return (
@@ -27,7 +28,8 @@ function ErrorPage() {
         <Header />
         <Navbar />
         <div className="outlet error">
-          <h3>An error occurred</h3>
+          <ErrorComponent />
+          {/* <h3>An error occurred</h3>
           <p>
             Something went wrong, please use the menu at the top of the page to
             navigate to the section of the website you are intrested in. <br />
@@ -36,7 +38,7 @@ function ErrorPage() {
               here
             </a>{" "}
             and i'll make sure to fix the issue as soon as possible.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

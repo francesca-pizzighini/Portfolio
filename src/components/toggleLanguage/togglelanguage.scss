@@ -1,0 +1,74 @@
+@import "../../variables.scss";
+
+.inside{
+    .container{
+        .toggler {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 170px;
+            right: 60px;
+
+            .toggler-slider {
+                width: 25px;
+                height: 13px;
+                background-color: $base;
+                border-radius: 2rem;
+                margin-inline: 7px;
+                cursor: pointer;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                border: 1px solid #DDDAE7;
+                box-sizing: content-box;
+                background-color: #07BEB8;
+    
+                .toggler-slider-circle {
+                    height: 13px;
+                    width: 13px;
+                    background-image: url("../../assets/ita.png");
+                    background-size: contain;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+.inside.english{
+    .container{
+        .toggler {
+            .toggler-slider {
+                justify-content: flex-end;
+                
+                .toggler-slider-circle{
+                    background-image: url("../../assets/eng.svg");
+                    background-size: cover;
+                    background-position: 50% 50%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 899px) {
+    .inside {
+        .container {
+            .toggler {
+                top: 70px;
+                right: 60px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .inside {
+        .container {
+            .toggler {
+                top: 70px;
+                right: 60px;
+            }
+        }
+    }
+}

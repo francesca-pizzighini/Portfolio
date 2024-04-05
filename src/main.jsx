@@ -10,6 +10,7 @@ import Skills from "./pages/skills/skills.jsx";
 import Projects from "./pages/projects/projects.jsx";
 import Contacts from "./pages/contacts/contacts.jsx";
 import ErrorPage from "./pages/errorPage/errorPage.jsx";
+import ErrorComponent from "./components/errorComponent/errorComponent.jsx";
 
 const router = createBrowserRouter([
   {
@@ -20,22 +21,22 @@ const router = createBrowserRouter([
       {
         path: "/home",
         element: <App />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorComponent />,
       },
       {
         path: "/skills",
         element: <Skills />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorComponent />,
       },
       {
         path: "/projects",
         element: <Projects />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorComponent />,
       },
       {
         path: "/contacts",
         element: <Contacts />,
-        errorElement: <ErrorPage />,
+        errorElement: <ErrorComponent />,
       },
     ],
   },

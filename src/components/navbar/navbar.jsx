@@ -1,31 +1,31 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.scss";
 
-function Navbar() {
+function Navbar({ isEnglish }) {
   return (
     <nav>
       <ul>
         <li>
           <NavLink to={"/home"}>
-            <p>Home</p>
+            {isEnglish ? <p>Home</p> : <p>Homepage</p>}
             <div className="line"></div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/skills"}>
-            <p>Skills</p>
+            {isEnglish ? <p>Skills</p> : <p>Competenze</p>}
             <div className="line"></div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/projects"}>
-            <p>Projects</p>
+            {isEnglish ? <p>Projects</p> : <p>Progetti</p>}
             <div className="line"></div>
           </NavLink>
         </li>
         <li>
           <NavLink to={"/contacts"}>
-            <p>Contacts</p>
+            {isEnglish ? <p>Contacts</p> : <p>Contatti</p>}
             <div className="line"></div>
           </NavLink>
         </li>
