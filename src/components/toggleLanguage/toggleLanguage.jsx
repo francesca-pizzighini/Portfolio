@@ -1,11 +1,7 @@
-import "./togglelanguage.scss"
+import "./togglelanguage.scss";
 
-function toggleLanguage() {
-  return (
-    <div>
-      
-    </div>
-  )
+function ToggleLanguage() {
+  return <div></div>;
 }
 
-export default toggleLanguage
+export default ToggleLanguage;

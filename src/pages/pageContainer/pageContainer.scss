@@ -40,7 +40,6 @@
     background-color: #7CA982;
     animation: 120s 0s linear infinite movement-one;
 }
-
 @keyframes movement-one {
     0% {
         transform: translate(-10dvw, -10dvh) rotate(0deg);
@@ -59,7 +58,6 @@
     }
 }
 
-
 .figure-two {
     height: 150px;
     width: 150px;
@@ -71,9 +69,7 @@
     background-color: #07BEB8;
     animation: 40s 0s infinite movement-two;
 }
-
 @keyframes movement-two {
-
     0%,
     100% {
         height: 150px;
@@ -99,7 +95,6 @@
     z-index: -1;
     animation: 120s 0s linear infinite movement-three;
 }
-
 @keyframes movement-three {
     from {
         transform: rotate(0deg);
@@ -111,7 +106,6 @@
 }
 
 
-// media queries
 @media only screen and (min-width: 500px) and (max-width: 899px){
     .inside{
         .container{
@@ -121,14 +115,11 @@
             }
         }
     }
-
     .figure-one {
         height: 400px;
         width: 400px;
     }
-
     @keyframes movement-two {
-
         0%,
         100% {
             height: 150px;
@@ -158,14 +149,12 @@
         height: 400px;
         width: 400px;
     }
-
     .figure-three {
         position: absolute;
         bottom: -100px;
         left: -100px;
         animation: 40s 0s linear infinite movement-three;
     }
-
     @keyframes movement-two {
         0%,
         100% {
@@ -173,7 +162,6 @@
             width: 150px;
             border-bottom-left-radius: 80%;
         }
-
         50% {
             height: 400px;
             width: 400px;

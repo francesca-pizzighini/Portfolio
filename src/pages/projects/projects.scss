@@ -8,25 +8,12 @@
     }
 }
 
-// @media only screen and (min-width: 500px) and (max-width: 899px) {
-//     .inside {
-//         .container {
-//             .outlet {
-//                 .all-projects {
-//                     margin-top: 50px;
-//                 }
-//             }
-//         }
-//     }
-// }
-
 @media only screen and (min-width: 900px) {
     .inside {
         .container {
             .outlet {
                 .all-projects {
                     align-self: end;
-                    // margin-right: 20px;
                     max-width: 600px;
                     justify-self: end;
                 }
