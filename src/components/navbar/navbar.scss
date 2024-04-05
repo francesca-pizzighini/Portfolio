@@ -30,6 +30,15 @@
                         opacity: 0.5;
                         transition: 200ms;
                     }
+                    a.active {
+                        p {
+                            display: none;
+                        }
+
+                        .line {
+                            display: block;
+                        }
+                    }
                 }
             }
         }
