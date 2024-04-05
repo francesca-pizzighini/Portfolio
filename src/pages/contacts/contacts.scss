@@ -1,0 +1,67 @@
+@import "../../variables.scss";
+
+.inside{
+    .container{
+        .outlet{
+            .contact-section{
+                width: 300px;
+
+                ul.contacts {
+                    margin-top: 100px;
+            
+                    li {
+                        font-weight: 800;
+                        margin-left: 23px;
+                        margin-top: 20px;
+                        list-style-type: none;
+
+                        a{
+                            text-decoration: none;
+                            color: $dark;
+
+                            svg{
+                                margin-right: 10px;
+                            }
+                        }
+                        a:hover{
+                            opacity: 0.5;
+                            transition: 200ms;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 899px) {
+    .inside{
+        .container{
+            .outlet{
+                .contact-section{
+                    margin-left: auto;
+
+                    .contacts{
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .inside {
+        .container {
+            .outlet {
+                .contact-section {
+                    margin-left: auto;
+
+                    .contacts {
+                        margin-right: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

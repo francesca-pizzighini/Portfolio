@@ -6,9 +6,9 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 import PageContainer from './pages/pageContainer/pageContainer.jsx'
 import App from './App.jsx'
-import Skills from './pages/skills.jsx'
+import Skills from './pages/skills/skills.jsx'
 import Projects from './pages/projects.jsx'
-import Contacts from './pages/contacts.jsx'
+import Contacts from './pages/contacts/contacts.jsx'
 import ErrorPage from './pages/errorPage.jsx'
 
 const router = createBrowserRouter([
