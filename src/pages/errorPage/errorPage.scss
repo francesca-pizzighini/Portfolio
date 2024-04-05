@@ -1,0 +1,77 @@
+@import "../../variables.scss";
+
+.inside{
+    .container{
+        .outlet.error{
+            margin-left: 23px;
+
+            h3,p{
+                width: 300px;
+            }
+            h3{
+                font-size: 40px;
+            }
+            p{
+                font-weight: 600;
+                padding-top: 20px;
+
+                a{
+                    color: $dark;
+                    text-decoration: none;
+                    font-weight: 800;
+                }
+                a:hover{
+                    opacity: 0.5;
+                    transition: 200ms;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 899px){
+    .inside {
+        .container {
+            .outlet.error {
+                width: 400px;
+                h3,
+                p {
+                    width: 400px;
+                }
+                h3 {
+                    font-size: 50px;
+                }
+                p {
+                    font-weight: 500;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .inside {
+        .container {
+            .outlet.error {
+                width: 600px;
+
+                h3,
+                p {
+                    width: 600px;
+                }
+
+                h3 {
+                    font-size: 60px;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: 500;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
