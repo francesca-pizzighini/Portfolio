@@ -39,7 +39,7 @@ function Projects() {
           description={
             currentIsEnglish
               ? "2024 / Information on climate change"
-              : "2024 / Informazioni sul cambiamento climatico"
+              : "2024 / Dati sul cambiamento climatico"
           }
           url="https://there-is-no-planet-b.netlify.app/"
         />
