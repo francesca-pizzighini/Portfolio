@@ -53,6 +53,15 @@ function Projects() {
           url="https://foodie-veggie.netlify.app/"
         />
         <SingleProject
+          websiteName="Weather application"
+          description={
+            currentIsEnglish
+              ? "2023 / Weather application"
+              : "2023 / Previsioni del meteo"
+          }
+          url="https://weather-foreecast-app.netlify.app"
+        />
+        <SingleProject
           websiteName="Knitting counter"
           description={
             currentIsEnglish
