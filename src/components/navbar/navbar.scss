@@ -27,8 +27,8 @@
                         }
                     }
                     a:hover {
-                        opacity: 0.5;
-                        transition: 200ms;
+                        opacity: 0.5 !important;
+                        transition: 200ms !important;
                     }
                     a.active {
                         p {
