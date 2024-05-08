@@ -1,26 +1,27 @@
-.inside{
-    .container{
-        .outlet{
-            .lang-framework-skill{
+.inside {
+    .container {
+        .outlet {
+            .lang-framework-skill {
+
                 .languages,
                 .frameworks,
                 .skills {
-                    margin-left: 23px;
                     margin-bottom: 50px;
-            
+
                     h3 {
                         font-size: 30px;
                         font-weight: 500;
 
-                        svg{
+                        svg {
                             margin-right: 15px;
                             position: relative;
                             top: 4px;
                         }
                     }
+
                     ul {
                         margin-left: 30px;
-            
+
                         li {
                             margin-top: 5px;
                             margin-left: 15px;
@@ -30,19 +31,20 @@
                 }
             }
         }
-        .languages{
-            ul li{
+
+        .languages {
+            ul li {
                 text-transform: uppercase;
             }
         }
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 899px){
-    .inside{
-        .container{
-            .outlet{
-                .lang-framework-skill{
+@media only screen and (min-width: 500px) and (max-width: 899px) {
+    .inside {
+        .container {
+            .outlet {
+                .lang-framework-skill {
                     margin-right: 40px;
                     align-self: end;
                 }
@@ -51,11 +53,11 @@
     }
 }
 
-@media only screen and (min-width: 900px){
+@media only screen and (min-width: 900px) {
     .inside {
         .container {
             .outlet {
-                .lang-framework-skill{
+                .lang-framework-skill {
                     margin-right: 40px;
                     align-self: end;
                     margin-left: 200px;
