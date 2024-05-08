@@ -21,12 +21,12 @@
                 align-items: center;
                 border: 1px solid #DDDAE7;
                 box-sizing: content-box;
-                background-color: #07BEB8;
+                background-color: transparent;
     
                 .toggler-slider-circle {
                     height: 13px;
                     width: 13px;
-                    background-image: url("../../assets/ita.png");
+                    background-image: url("../../assets/img/ita.png");
                     background-size: contain;
                     border-radius: 50%;
                 }
@@ -42,7 +42,7 @@
                 justify-content: flex-end;
                 
                 .toggler-slider-circle{
-                    background-image: url("../../assets/eng.svg");
+                    background-image: url("../../assets/img/eng.svg");
                     background-size: cover;
                     background-position: 50% 50%;
                 }

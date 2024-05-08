@@ -75,7 +75,7 @@ function Projects() {
           description={
             currentIsEnglish
               ? "2023 / Meditation website"
-              : "2023 / Sito di meditazione)"
+              : "2023 / Sito di meditazione"
           }
           url="https://francesca-pizzighini.github.io/MeditActive/"
         />
